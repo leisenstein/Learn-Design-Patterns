@@ -42,12 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\Components\Pizza.cs" />
+    <Compile Include="Objects\ConcreteComponents\LargePizza.cs" />
+    <Compile Include="Objects\ConcreteComponents\MediumPizza.cs" />
+    <Compile Include="Objects\ConcreteComponents\SmallPizza.cs" />
+    <Compile Include="Objects\ConcreteDecorators\Cheese.cs" />
+    <Compile Include="Objects\ConcreteDecorators\Ham.cs" />
+    <Compile Include="Objects\ConcreteDecorators\Peppers.cs" />
+    <Compile Include="Objects\Decorators\PizzaDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

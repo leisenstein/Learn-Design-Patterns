@@ -12,6 +12,7 @@ namespace Learn_Command_Pattern.Commands
         string CommandName { get; }
         string Description { get; }
 
+        // Each Command will implement the ICommandFactory so I can create an instance of itself
         ICommand MakeCommand(string[] arguments);
     }
 }

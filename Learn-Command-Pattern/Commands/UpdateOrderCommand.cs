@@ -9,6 +9,7 @@ namespace Learn_Command_Pattern.Commands
 {
     public class UpdateOrderCommand : ICommand, ICommandFactory
     {
+        // Implement Execute from ICommand and MakeCommand from ICommandFactory(CommandName,Description)
         public int NewQuantity { get; set; }
         
         public void Execute()

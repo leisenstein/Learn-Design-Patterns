@@ -19,9 +19,11 @@ namespace Learn_Command_Pattern
                 return;
             }
 
+            // Make sure the command passed in teh args is a valid command
             var parser = new CommandParser(availableCommands);
             var command = parser.ParseCommand(args);
 
+            // if it's a valid command, call Execute
             if (command != null)
                 command.Execute();
 
